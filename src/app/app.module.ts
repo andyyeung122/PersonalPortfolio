@@ -5,16 +5,20 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ProjectsComponent } from './components/projects/projects/projects.component';
 import { ResumeComponent } from './components/resume/resume/resume.component';
+import { AppRoutingModule } from './app-routing.module';
+import { HomeComponent } from './components/home/home/home.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ProjectsComponent,
-    ResumeComponent
+    ResumeComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
