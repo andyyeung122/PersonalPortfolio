@@ -20,4 +20,8 @@ export class HomeComponent implements OnInit {
     this.router.navigateByUrl('/resume');
   }
 
+    public goToProjects() {
+    this.router.navigateByUrl('/projects');
+  }
+
 }
