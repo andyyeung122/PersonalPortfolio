@@ -1,3 +1,14 @@
+<div class="card-container">
+  <a class="card" (click) = "goToHome()">
+    <mat-icon class = "icons" viewBox="0 0 24 24">home</mat-icon>
+    <span>Home</span>
+  </a>
+
+  <a class="card" target="_blank">
+    <mat-icon class = "icons" viewBox="0 0 24 24">brush</mat-icon>
+    <span>Projects</span>
+  </a>
+</div>
 <pdf-viewer [src] = "pdfResume"
             [render-text] = "true"
             class = "pdfStyle">

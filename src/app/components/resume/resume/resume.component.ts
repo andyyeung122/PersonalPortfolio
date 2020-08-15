@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-resume',
@@ -8,9 +9,13 @@ import { Component, OnInit } from '@angular/core';
 export class ResumeComponent implements OnInit {
   pdfResume = "../../../../assets/pdf/AndyYeungResume.pdf";
 
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit(): void {
+  }
+
+  public goToHome() {
+    this.router.navigateByUrl('/home');
   }
 
 }
