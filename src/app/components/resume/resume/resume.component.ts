@@ -18,4 +18,8 @@ export class ResumeComponent implements OnInit {
     this.router.navigateByUrl('/home');
   }
 
+  public goToProjects() {
+    this.router.navigateByUrl('/projects');
+  }
+
 }
