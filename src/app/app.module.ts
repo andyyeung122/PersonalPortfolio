@@ -5,6 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { PdfViewerModule } from 'ng2-pdf-viewer';
 
+
 import { AppComponent } from './app.component';
 import { ProjectsComponent } from './components/projects/projects/projects.component';
 import { ResumeComponent } from './components/resume/resume/resume.component';
@@ -22,7 +23,7 @@ import { HomeComponent } from './components/home/home/home.component';
     BrowserAnimationsModule,
     AppRoutingModule,
     MaterialModule,
-    PdfViewerModule
+    PdfViewerModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
