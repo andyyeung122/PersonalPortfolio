@@ -13,6 +13,7 @@ export class ProjectsComponent implements OnInit {
   public projects: Project[] = [];
   public FitnessCalanaderSkills: string[] = ['Angular', 'Typescript', 'HTML5', 'CSS/SCSS', 'MySQL'];
   public SnikieSkills: string[] = ['Angular', 'Typescript', 'HTML5', 'CSS/SCSS', 'Firebase'];
+  public imagePath = "../../../../assets/images/no-image.jpg";
 
   constructor(private router: Router) { }
 
