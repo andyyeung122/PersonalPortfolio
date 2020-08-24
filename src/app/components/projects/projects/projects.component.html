@@ -9,7 +9,8 @@
     <span>Resume</span>
   </a>
 </div>
-<div class = "mainStyle">
+<mat-grid-list cols = "3" rowHeight = "700px" gutterSize = "20px">
+  <mat-grid-tile class = "matTitleStyle" *ngFor="let project of projects">
   <mat-card class = "mat-elevation-z8 cardStyle">
     <img [src] ="imagePath">
     <mat-divider></mat-divider>
@@ -30,4 +31,5 @@
       <button mat-raised-button>GitHub Version</button>
     </mat-card-actions>
   </mat-card>
-</div>
+</mat-grid-tile>
+</mat-grid-list>
