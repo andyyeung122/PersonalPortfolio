@@ -12,7 +12,7 @@
 <mat-grid-list cols = "3" rowHeight = "700px" gutterSize = "20px">
   <mat-grid-tile class = "matTitleStyle" *ngFor="let project of projects">
   <mat-card class = "mat-elevation-z8 cardStyle">
-    <img [src] ="imagePath">
+    <img [src] ="project.image">
     <mat-divider></mat-divider>
     <mat-card-title class = "cardTitleStyle">
       <span>{{project.title}}</span>
