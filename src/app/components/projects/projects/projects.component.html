@@ -15,11 +15,11 @@
     <img [src] ="imagePath">
     <mat-divider></mat-divider>
     <mat-card-title class = "cardTitleStyle">
-      <span>Title</span>
+      <span>{{project.title}}</span>
     </mat-card-title>
-    <mat-card-content>
+    <mat-card-content fxLayout = "column">
       <p>
-        Project Description
+        {{project.description}}
       </p>
       <mat-list role = "list">
         <mat-list-item role = "listitem">
@@ -27,7 +27,7 @@
         </mat-list-item>
       </mat-list>
     </mat-card-content>
-    <mat-card-actions fxLayout = "column">
+    <mat-card-actions class = "actionBtnStyle" fxLayout = "column" >
       <button mat-raised-button>GitHub Version</button>
     </mat-card-actions>
   </mat-card>

@@ -92,3 +92,18 @@ svg.material-icons:not(:last-child) {
 .cardTitleStyle {
   margin: 30px 0px 20px 0px !important;
 }
+
+.mat-card {
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+}
+
+.mat-card-content {
+  display: flex;
+  flex: 1;
+}
+
+
+
+
