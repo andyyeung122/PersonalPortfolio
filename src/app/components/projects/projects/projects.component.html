@@ -9,6 +9,10 @@
     <span>Resume</span>
   </a>
 </div>
+<p class = "titleStyle" >
+  My Work
+</p>
+<div class = "projectsLayout">
 <mat-grid-list cols = "3" rowHeight = "700px" gutterSize = "20px">
   <mat-grid-tile class = "matTitleStyle" *ngFor="let project of projects">
   <mat-card class = "mat-elevation-z8 cardStyle">
@@ -21,15 +25,17 @@
       <p>
         {{project.description}}
       </p>
-      <mat-list role = "list">
-        <mat-list-item role = "listitem">
-          Skills
+      <mat-list role = "list" *ngFor="let skill of project.skill">
+        <mat-list-item class = "skillStyle" role = "listitem">
+          {{skill}}
         </mat-list-item>
       </mat-list>
     </mat-card-content>
     <mat-card-actions class = "actionBtnStyle" fxLayout = "column" >
-      <button mat-raised-button>GitHub Version</button>
+      <a class = "btnStyle" mat-raised-button href = "{{project.link}}" target="_blank">GitHub Version</a>
+      <!-- The 'target="_blank"' part is used to open a new tab -->
     </mat-card-actions>
   </mat-card>
 </mat-grid-tile>
 </mat-grid-list>
+</div>

@@ -85,8 +85,8 @@ svg.material-icons:not(:last-child) {
   border-radius: 10px;
 }
 
-.matTitleStyle {
-
+.projectsLayout {
+  margin: 0px 200px 0px 200px;
 }
 
 .cardTitleStyle {
@@ -104,6 +104,21 @@ svg.material-icons:not(:last-child) {
   flex: 1;
 }
 
+.skillStyle {
+  height: 24px !important;
+}
+
+.btnStyle {
+  background-color: black;
+  color: white;
+}
+
+.titleStyle {
+  text-align: center;
+  font-size: xx-large;
+  font-weight: bold;
+  margin: 40px 0px 20px 0px;
+}
 
 
 
