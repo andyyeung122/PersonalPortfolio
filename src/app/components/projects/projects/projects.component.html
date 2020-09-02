@@ -12,10 +12,8 @@
 <p class = "titleStyle" >
   My Work
 </p>
-<div class = "projectsLayout">
-<mat-grid-list cols = "3" rowHeight = "700px" gutterSize = "20px">
-  <mat-grid-tile class = "matTitleStyle" *ngFor="let project of projects">
-  <mat-card class = "mat-elevation-z8 cardStyle">
+<div class = "projectsLayout" fxLayout="row wrap" fxLayoutAlign="space-around center" fxLayoutGap="20px">
+  <mat-card class = "mat-elevation-z8 cardStyle" *ngFor="let project of projects" fxFlex>
     <img [src] ="project.image">
     <mat-divider></mat-divider>
     <mat-card-title class = "cardTitleStyle">
@@ -36,6 +34,4 @@
       <!-- The 'target="_blank"' part is used to open a new tab -->
     </mat-card-actions>
   </mat-card>
-</mat-grid-tile>
-</mat-grid-list>
 </div>
