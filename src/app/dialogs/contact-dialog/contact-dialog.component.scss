@@ -1,0 +1,17 @@
+.actionBtn {
+  justify-content: flex-end;
+}
+
+.sendBtn {
+  background-color: black;
+  color: white;
+}
+
+::ng-deep .mat-form-field-appearance-outline .mat-form-field-outline {
+  color: black !important;
+}
+
+::ng-deep .mat-form-field-appearance-outline.mat-form-field-invalid.mat-form-field-invalid .mat-form-field-outline-thick{
+  color: red!important;
+  opacity: 0.8!important;
+}

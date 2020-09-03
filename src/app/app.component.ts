@@ -22,7 +22,8 @@ export class AppComponent implements OnInit{
 
   onContactMeClick() {
     const dialogRef = this.dialog.open(ContactDialogComponent, {
-      height: '650px',
+      panelClass: 'dialog-add',
+      autoFocus: true,
       width: '700px',
     });
 
