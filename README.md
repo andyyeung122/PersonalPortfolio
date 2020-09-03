@@ -10,5 +10,5 @@ I am an inspired front-end developer located in New York City. I am pursring a c
 
 ## Contacts
 
-Email: andyyeung122@gmail.com
+Email: andyyeung122@gmail.com  
 Phone: 646-387-0136
