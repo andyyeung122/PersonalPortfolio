@@ -12,7 +12,7 @@ export class ContactDialogComponent implements OnInit {
 
   sendEmailForm: FormGroup;
 
-  constructor(private formBuilder: FormBuilder, private dialogRef: MatDialogRef<ContactDialogComponent>) {
+  constructor(private formBuilder: FormBuilder, public dialogRef: MatDialogRef<ContactDialogComponent>) {
     this.buildForm();
    }
 

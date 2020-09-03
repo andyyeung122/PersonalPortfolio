@@ -1,5 +1,5 @@
 <h1 mat-dialog-title> Contact Me </h1>
-<mat-dialog-content [formGroup]="sendEmailForm">
+<mat-dialog-content>
   <mat-form-field fxFill appearance = 'outline'>
     <input matInput placeholder = "Full Name" formControlName = "name" >
   </mat-form-field>
@@ -20,4 +20,4 @@
   <button mat-raised-button mat-button (click) = "onClose()">Cancel</button>
   <button mat-raised-button mat-button [disabled]="!sendEmailForm.valid" color = "primary" (click) = "onSubmit()">Send</button>
 </mat-dialog-actions>
-<br>
+
