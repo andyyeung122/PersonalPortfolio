@@ -7,7 +7,7 @@ import { Router } from '@angular/router';
   styleUrls: ['./resume.component.scss']
 })
 export class ResumeComponent implements OnInit {
-  pdfResume = "../../../../assets/pdf/AndyYeungResume.pdf";
+  pdfResume = "assets/pdf/AndyYeungResume.pdf";
 
   constructor(private router: Router) { }
 
