@@ -68,7 +68,6 @@ import { MatTooltipModule } from '@angular/material/tooltip';
         MatToolbarModule,
         MatTooltipModule,
         MatStepperModule,
-        MatIconModule
     ],
     exports: [
         MatAutocompleteModule,
@@ -84,7 +83,6 @@ import { MatTooltipModule } from '@angular/material/tooltip';
         MatDialogModule,
         MatExpansionModule,
         MatGridListModule,
-        MatIconModule,
         MatInputModule,
         MatListModule,
         MatMenuModule,
