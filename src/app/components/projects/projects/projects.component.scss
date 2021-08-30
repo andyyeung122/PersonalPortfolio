@@ -83,11 +83,14 @@ svg.material-icons:not(:last-child) {
   width: 300px;
   height: 600px;
   border-radius: 10px;
-  margin-bottom: 20px;
+  margin: 0px 50px 20px 50px;
 }
 
 .projectsLayout {
-  margin: 0px 300px 0px 300px;
+  margin: 0px 100px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .cardTitleStyle {
