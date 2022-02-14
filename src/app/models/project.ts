@@ -3,5 +3,6 @@ export class Project {
   image: string;
   skill: string[];
   description: string;
+  btnText: string;
   link: string;
 }

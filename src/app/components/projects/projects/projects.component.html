@@ -1,36 +1,39 @@
 <div class="card-container">
-  <a class="card" (click) = "goToHome()">
-    <mat-icon class = "icons" viewBox="0 0 24 24">home</mat-icon>
+  <a class="card" (click)="goToHome()">
+    <mat-icon class="icons" viewBox="0 0 24 24">home</mat-icon>
     <span>Home</span>
   </a>
 
-  <a class="card" (click) = "goToResume()">
-    <mat-icon class = "icons" viewBox="0 0 24 24">insert_drive_file</mat-icon>
+  <a class="card" (click)="goToResume()">
+    <mat-icon class="icons" viewBox="0 0 24 24">insert_drive_file</mat-icon>
     <span>Resume</span>
   </a>
 </div>
-<p class = "titleStyle" >
-  My Work
-</p>
-<div class = "projectsLayout">
-  <mat-card class = "mat-elevation-z8 cardStyle" *ngFor="let project of projects">
-    <img [src] ="project.image">
-    <mat-divider></mat-divider>
-    <mat-card-title class = "cardTitleStyle">
-      <span>{{project.title}}</span>
+<p class="titleStyle">My Work</p>
+<div class="projectsLayout">
+  <mat-card class="mat-elevation-z8 cardStyle" *ngFor="let project of projects">
+    <img [src]="project.image" />
+    <mat-card-title class="cardTitleStyle">
+      <span>{{ project.title }}</span>
     </mat-card-title>
-    <mat-card-content fxLayout = "column">
+    <mat-card-content fxLayout="column">
       <p>
-        {{project.description}}
+        {{ project.description }}
       </p>
-      <mat-list role = "list" *ngFor="let skill of project.skill">
-        <mat-list-item class = "skillStyle" role = "listitem">
-          {{skill}}
+      <mat-list role="list" *ngFor="let skill of project.skill">
+        <mat-list-item class="skillStyle" role="listitem">
+          {{ skill }}
         </mat-list-item>
       </mat-list>
     </mat-card-content>
-    <mat-card-actions class = "actionBtnStyle" fxLayout = "column" >
-      <a class = "btnStyle" mat-raised-button href = "{{project.link}}" target="_blank">GitHub Version</a>
+    <mat-card-actions class="actionBtnStyle" fxLayout="column">
+      <a
+        class="btnStyle"
+        mat-raised-button
+        href="{{ project.link }}"
+        target="_blank"
+        >{{ project.btnText }}</a
+      >
       <!-- The 'target="_blank"' part is used to open a new tab -->
     </mat-card-actions>
   </mat-card>
