@@ -2,7 +2,7 @@
 
 Andy Yeung
 
-Front End Developer
+Full Stack Software Engineer
 
 ## About Me
 
