@@ -4,15 +4,14 @@ import { Router } from '@angular/router';
 @Component({
   selector: 'app-resume',
   templateUrl: './resume.component.html',
-  styleUrls: ['./resume.component.scss']
+  styleUrls: ['./resume.component.scss'],
 })
 export class ResumeComponent implements OnInit {
-  pdfResume = "assets/pdf/AndyYeungResume.pdf";
+  pdfResume = 'assets/pdf/Andy_Yeung_Resume.pdf';
 
-  constructor(private router: Router) { }
+  constructor(private router: Router) {}
 
-  ngOnInit(): void {
-  }
+  ngOnInit(): void {}
 
   public goToHome() {
     this.router.navigateByUrl('/home');
@@ -21,5 +20,4 @@ export class ResumeComponent implements OnInit {
   public goToProjects() {
     this.router.navigateByUrl('/projects');
   }
-
 }
